@@ -4,66 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vernacular — Creative. Strategy. Culture.</title>
-  <meta name="description" content="Senior brand strategy and creative consultancy. Vernacular works with founders, CMOs and international organisations across the GCC and Africa corridor. Dubai | Hamburg | Addis Ababa.">
-  <meta name="keywords" content="brand strategy, fractional CMO, GCC, Dubai, Addis Ababa, Africa, marketing consultancy, cultural intelligence, Vernacular">
+  <meta name="description" content="Senior brand strategy and creative consultancy. We build brands that mean something. Dubai, Hamburg, Addis Ababa.">
   <meta property="og:title" content="Vernacular — Creative. Strategy. Culture.">
-  <meta property="og:description" content="We don't do generic. Brand strategy and creative consultancy for ambitious founders, CMOs, and organisations operating at the edge of culture.">
-  <meta property="og:type" content="website">
+  <meta property="og:description" content="Brand strategy, fractional CMO, cultural intelligence. For founders, CMOs and institutions operating at the edge of culture.">
   <meta property="og:url" content="https://vernacular.cc">
   <link rel="canonical" href="https://vernacular.cc">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/system.css">
   <link rel="stylesheet" href="css/home.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y31WTXG2T3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y31WTXG2T3');
+  </script>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="v-nav" role="navigation" aria-label="Main navigation">
-    <div>
+  <nav class="v-nav v-nav--dark" id="main-nav">
+    <div class="v-nav__brand">
       <div class="v-nav__logo">VERNACULAR</div>
-      <div class="v-nav__logo-sub">Creative · Strategy · Culture</div>
+      <div class="v-nav__sub">Creative · Strategy · Culture</div>
     </div>
-    <button class="v-nav__burger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="v-nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="v-nav__links">
-      <li><a href="#work">Work</a></li>
+      <li><a href="#for-you">Who It's For</a></li>
       <li><a href="#offerings">Services</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="labs/index.html">Labs</a></li>
-      <li><a href="pro/index.html">Pro</a></li>
-      <li><a href="mailto:coffee@vernacular.cc" class="nav-cta">Get in touch</a></li>
+      <li><a href="labs/index.html" class="nav-sub-labs">Labs</a></li>
+      <li><a href="pro/index.html" class="nav-sub-pro">Pro</a></li>
+      <li><a href="mailto:coffee@vernacular.cc" class="nav-pill">Let's talk</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
+  <!-- HERO — DARK -->
+  <section class="s-dark hero section-pad--lg">
     <div class="hero__bg">
-      <img src="assets/images/texture-abstract2.jpg" alt="" aria-hidden="true" class="hero__bg-img">
+      <img src="assets/images/texture-abstract2.jpg" alt="" aria-hidden="true">
       <div class="hero__bg-overlay"></div>
     </div>
     <div class="container hero__inner">
-      <div class="hero__content">
-        <div class="hero__kicker reveal">
-          <span class="kicker-dot"></span>
-          Dubai · Hamburg · Addis Ababa
+      <div class="hero__left">
+        <div class="hero__locations reveal">
+          <span class="loc-dot"></span>Dubai
+          <span class="loc-sep">·</span>Hamburg
+          <span class="loc-sep">·</span>Addis Ababa
         </div>
-        <h1 class="hero__wordmark reveal reveal-delay-1">
-          <span class="wm-v">V</span><span class="wm-rest">ERNACULAR</span>
+        <h1 class="v-display hero__title reveal rd1">
+          <span class="title-v">V</span>ERNACULAR
         </h1>
-        <p class="hero__sub reveal reveal-delay-2">
-          We build brands that mean something.<br>
-          Strategy sharp enough to cut. Creative that earns attention.
+        <p class="hero__tagline reveal rd2">
+          We build brands that<br>mean something.
         </p>
-        <div class="hero__actions reveal reveal-delay-3">
-          <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--primary v-btn--arrow">Start with a coffee</a>
-          <a href="#offerings" class="v-btn v-btn--ghost">See what we do</a>
+        <div class="hero__actions reveal rd3">
+          <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal">Start with a coffee →</a>
+          <a href="#offerings" class="v-btn v-btn--ghost-dark">See what we do</a>
         </div>
       </div>
-      <div class="hero__aside reveal reveal-delay-2">
-        <div class="hero__stat-block">
+      <div class="hero__right reveal rd2">
+        <div class="hero__stats">
           <div class="hero__stat">
             <div class="hero__stat-num">20+</div>
-            <div class="hero__stat-label">Years at Nike, Adidas,<br>MDLBEAST & beyond</div>
+            <div class="hero__stat-label">Years at Nike,<br>Adidas & MDLBEAST</div>
           </div>
           <div class="hero__stat">
             <div class="hero__stat-num">50+</div>
@@ -76,317 +81,261 @@
         </div>
       </div>
     </div>
-    <div class="hero__scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
   </section>
 
-  <!-- TICKER -->
-  <div class="v-ticker" aria-hidden="true">
-    <div class="v-ticker__inner">
-      <span>Brand Strategy</span>
-      <span class="tick-sep">✦</span>
-      <span>Fractional CMO</span>
-      <span class="tick-sep">✦</span>
-      <span>Cultural Intelligence</span>
-      <span class="tick-sep">✦</span>
-      <span>Creative Direction</span>
-      <span class="tick-sep">✦</span>
-      <span>Executive Coaching</span>
-      <span class="tick-sep">✦</span>
-      <span>Institutional Workshops</span>
-      <span class="tick-sep">✦</span>
-      <span>Market Entry</span>
-      <span class="tick-sep">✦</span>
-      <span>Narrative Design</span>
-      <span class="tick-sep">✦</span>
+  <!-- TICKER — on yellow band -->
+  <div class="s-dark">
+    <div class="v-ticker">
+      <div class="v-ticker__track">
+        <span>Brand Strategy</span><span class="tick-dot">✦</span>
+        <span>Fractional CMO</span><span class="tick-dot">✦</span>
+        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
+        <span>Creative Direction</span><span class="tick-dot">✦</span>
+        <span>Executive Coaching</span><span class="tick-dot">✦</span>
+        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
+        <span>Market Entry</span><span class="tick-dot">✦</span>
+        <span>Narrative Design</span><span class="tick-dot">✦</span>
+        <span>Brand Strategy</span><span class="tick-dot">✦</span>
+        <span>Fractional CMO</span><span class="tick-dot">✦</span>
+        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
+        <span>Creative Direction</span><span class="tick-dot">✦</span>
+        <span>Executive Coaching</span><span class="tick-dot">✦</span>
+        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
+        <span>Market Entry</span><span class="tick-dot">✦</span>
+        <span>Narrative Design</span><span class="tick-dot">✦</span>
+        <span>Brand Strategy</span><span class="tick-dot">✦</span>
+        <span>Fractional CMO</span><span class="tick-dot">✦</span>
+        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
+        <span>Creative Direction</span><span class="tick-dot">✦</span>
+        <span>Executive Coaching</span><span class="tick-dot">✦</span>
+        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
+        <span>Market Entry</span><span class="tick-dot">✦</span>
+        <span>Narrative Design</span><span class="tick-dot">✦</span>
+      </div>
     </div>
   </div>
 
-  <!-- MANIFESTO -->
-  <section id="manifesto" class="manifesto">
-    <div class="container manifesto__inner">
-      <div class="manifesto__left reveal">
-        <div class="v-label"><span class="num">01</span> Why we exist</div>
-      </div>
-      <div class="manifesto__right">
-        <p class="manifesto__pull reveal">
-          Most agencies speak at people.<br>
-          We learn to speak <em>their</em> language first.
-        </p>
-        <p class="v-body reveal reveal-delay-1">
-          Vernacular started as one idea: that the best brands don't broadcast — they converse. They know what their audience cares about before the audience has the words to say it. That's not a nice-to-have. That's the whole game.
-        </p>
-        <p class="v-body reveal reveal-delay-2">
-          We've spent two decades inside the rooms where brand decisions are made — at Nike, Adidas, MDLBEAST, and across 50+ markets. Now we bring that thinking directly to founders, CMOs, and organisations that are ready to do things properly.
-        </p>
+  <!-- WHO IT'S FOR — YELLOW (elevated) -->
+  <section id="for-you" class="s-yellow section-pad">
+    <div class="container">
+      <div class="v-label reveal">Who this is for</div>
+      <h2 class="v-heading reveal rd1">Pick your problem.</h2>
+      <div class="icp-grid reveal rd2">
+
+        <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Audit" class="icp-card icp-card--dark">
+          <div class="icp-num">01</div>
+          <div class="icp-title">You're a startup founder</div>
+          <ul class="icp-bullets">
+            <li>Brand not pulling its weight</li>
+            <li>Need positioning before you scale</li>
+            <li>No time for agency overhead</li>
+          </ul>
+          <div class="icp-hook">Free brand audit →</div>
+        </a>
+
+        <a href="pro/index.html" class="icp-card icp-card--dark">
+          <div class="icp-num">02</div>
+          <div class="icp-title">You're a CMO or brand leader</div>
+          <ul class="icp-bullets">
+            <li>Need a peer, not another vendor</li>
+            <li>Team lacks strategic seniority</li>
+            <li>Board wants results faster</li>
+          </ul>
+          <div class="icp-hook">Free 30-min strategy call →</div>
+        </a>
+
+        <a href="mailto:coffee@vernacular.cc?subject=Market%20Entry%20Consultation" class="icp-card icp-card--dark">
+          <div class="icp-num">03</div>
+          <div class="icp-title">You're entering Africa or the GCC</div>
+          <ul class="icp-bullets">
+            <li>Culture is the barrier nobody briefs for</li>
+            <li>We know both markets from inside</li>
+            <li>Save 12 months of expensive mistakes</li>
+          </ul>
+          <div class="icp-hook">Free market entry call →</div>
+        </a>
+
+        <a href="labs/index.html" class="icp-card icp-card--dark">
+          <div class="icp-num">04</div>
+          <div class="icp-title">You're an embassy, NGO or institution</div>
+          <ul class="icp-bullets">
+            <li>Need training people remember</li>
+            <li>Not a PowerPoint marathon</li>
+            <li>Strategic intervention, built for Addis</li>
+          </ul>
+          <div class="icp-hook">Free programme review →</div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- OFFERINGS -->
-  <section id="offerings" class="offerings">
+  <!-- THREE OFFERINGS — PAPER/LIGHT -->
+  <section id="offerings" class="s-paper section-pad">
     <div class="container">
-      <div class="offerings__header reveal">
-        <div class="v-label"><span class="num">02</span> Three practices. One studio.</div>
-        <h2 class="v-heading">Pick your problem.<br>We'll solve it.</h2>
-      </div>
-      <div class="offerings__grid">
+      <div class="v-label reveal">Three practices. One studio.</div>
+      <h2 class="v-heading reveal rd1">We solve problems.<br>Pick yours.</h2>
+      <div class="offerings-grid reveal rd2">
 
-        <!-- Core -->
-        <div class="offering-card reveal">
-          <div class="offering-card__num">01</div>
-          <div class="offering-card__label">Vernacular Core</div>
-          <div class="offering-card__title">Brand &amp; Creative Strategy</div>
-          <p class="offering-card__desc">
-            For startups and established companies that need their brand to actually work. Positioning, identity, narrative, campaign strategy. No fluff. Full ownership of the outcome.
-          </p>
-          <ul class="offering-card__list">
-            <li>Brand positioning &amp; architecture</li>
-            <li>Marketing strategy &amp; messaging</li>
-            <li>Campaign concept &amp; creative direction</li>
-            <li>Market entry (Africa ↔ GCC corridor)</li>
-          </ul>
-          <div class="offering-card__hook">
-            <span class="hook-label">Free to start</span>
-            <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Audit%20Request" class="hook-link">
-              Request a brand audit →
-            </a>
+        <div class="offering offering--core">
+          <div class="offering__accent"></div>
+          <div class="offering__header">
+            <div class="offering__label">Vernacular</div>
+            <div class="offering__title">Brand &amp; Creative Strategy</div>
           </div>
-          <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Enquiry" class="v-btn v-btn--primary">Work with us</a>
+          <ul class="offering__points">
+            <li>Brand positioning &amp; identity</li>
+            <li>Campaign strategy &amp; creative direction</li>
+            <li>Market entry — Africa / GCC corridor</li>
+          </ul>
+          <div class="offering__footer">
+            <div class="offering__free">Free brand audit to start</div>
+            <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Enquiry" class="v-btn v-btn--ink">Work with us →</a>
+          </div>
         </div>
 
-        <!-- Pro -->
-        <div class="offering-card offering-card--pro reveal reveal-delay-1">
-          <div class="offering-card__num">02</div>
-          <div class="offering-card__label">Vernacular Pro</div>
-          <div class="offering-card__title">For CMOs, Founders &amp; Leaders</div>
-          <p class="offering-card__desc">
-            A partner to senior marketing minds who need strategic firepower, executive coaching, or someone to help them build an organisation that doesn't stall.
-          </p>
-          <ul class="offering-card__list">
+        <div class="offering offering--pro">
+          <div class="offering__accent"></div>
+          <div class="offering__header">
+            <div class="offering__label" style="color:var(--pro-accent);">Vernacular Pro</div>
+            <div class="offering__title">For CMOs &amp; Founders</div>
+          </div>
+          <ul class="offering__points">
             <li>Fractional CMO engagements</li>
-            <li>1:1 executive coaching &amp; mentoring</li>
+            <li>1:1 executive coaching</li>
             <li>Marketing org &amp; team architecture</li>
-            <li>Leadership development</li>
           </ul>
-          <div class="offering-card__hook">
-            <span class="hook-label">Free to start</span>
-            <a href="mailto:coffee@vernacular.cc?subject=30-Min%20Strategy%20Session%20Request" class="hook-link">
-              Book a free 30-min strategy call →
-            </a>
+          <div class="offering__footer">
+            <div class="offering__free" style="color:var(--pro-accent);">Free 30-min call to start</div>
+            <a href="pro/index.html" class="v-btn v-btn--pro">Explore Pro →</a>
           </div>
-          <a href="pro/index.html" class="v-btn v-btn--primary">Explore Pro</a>
         </div>
 
-        <!-- Labs -->
-        <div class="offering-card offering-card--labs reveal reveal-delay-2">
-          <div class="offering-card__num">03</div>
-          <div class="offering-card__label">Vernacular Labs</div>
-          <div class="offering-card__title">Training &amp; Workshop Studio</div>
-          <p class="offering-card__desc">
-            A strategic intervention studio for embassies, NGOs, international organisations and development institutions. Cultural intelligence, storytelling, AI, leadership. Built for Addis Ababa. Available globally.
-          </p>
-          <ul class="offering-card__list">
+        <div class="offering offering--labs">
+          <div class="offering__accent"></div>
+          <div class="offering__header">
+            <div class="offering__label" style="color:var(--labs-accent);">Vernacular Labs</div>
+            <div class="offering__title">Training &amp; Workshop Studio</div>
+          </div>
+          <ul class="offering__points">
             <li>Cultural intelligence workshops</li>
-            <li>Institutional narrative &amp; storytelling</li>
-            <li>AI for development organisations</li>
-            <li>Bespoke executive off-sites</li>
+            <li>Institutional storytelling &amp; AI</li>
+            <li>Bespoke off-sites &amp; interventions</li>
           </ul>
-          <div class="offering-card__hook">
-            <span class="hook-label">Free to start</span>
-            <a href="mailto:coffee@vernacular.cc?subject=Labs%20Programme%20Review%20Request" class="hook-link">
-              Get a free programme review →
-            </a>
+          <div class="offering__footer">
+            <div class="offering__free" style="color:var(--labs-accent);">Free programme review to start</div>
+            <a href="labs/index.html" class="v-btn v-btn--labs">Explore Labs →</a>
           </div>
-          <a href="labs/index.html" class="v-btn v-btn--primary">Explore Labs</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- CREDENTIALS STRIP -->
-  <section class="credentials">
-    <div class="container">
-      <div class="cred__header reveal">
-        <div class="v-label"><span class="num">03</span> The work behind the work</div>
-        <p class="cred__intro v-body reveal reveal-delay-1">
-          We don't name-drop. We just have receipts.
-        </p>
-      </div>
-      <div class="cred__logos reveal" aria-label="Past clients and employers">
-        <div class="cred__logo-item">NIKE</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">ADIDAS</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">MDLBEAST</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">MICROSOFT</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">BMW</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">MASTERCARD</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">PORSCHE</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">EMAAR</div>
-        <div class="cred__logo-sep">·</div>
-        <div class="cred__logo-item">DUBAI GOV</div>
-      </div>
-      <div class="cred__context reveal reveal-delay-1">
-        <div class="cred__context-item">
-          <div class="ctx-num">Beijing 2008</div>
-          <div class="ctx-label">Olympics — Nike EMEA activation</div>
-        </div>
-        <div class="cred__context-item">
-          <div class="ctx-num">50+</div>
-          <div class="ctx-label">Emerging markets — Adidas Brand Activation Director</div>
-        </div>
-        <div class="cred__context-item">
-          <div class="ctx-num">CMO</div>
-          <div class="ctx-label">MDLBEAST — built the brand from the ground up</div>
-        </div>
-        <div class="cred__context-item">
-          <div class="ctx-num">GCC + Africa</div>
-          <div class="ctx-label">Corridor — the market nobody else knows from the inside</div>
-        </div>
+  <!-- TICKER 2 -->
+  <div class="s-yellow">
+    <div class="v-ticker" style="background:var(--ink);">
+      <div class="v-ticker__track">
+        <span>Nike</span><span class="tick-dot">·</span>
+        <span>Adidas</span><span class="tick-dot">·</span>
+        <span>MDLBEAST</span><span class="tick-dot">·</span>
+        <span>Microsoft</span><span class="tick-dot">·</span>
+        <span>BMW</span><span class="tick-dot">·</span>
+        <span>Mastercard</span><span class="tick-dot">·</span>
+        <span>Porsche</span><span class="tick-dot">·</span>
+        <span>Emaar</span><span class="tick-dot">·</span>
+        <span>Dubai Gov</span><span class="tick-dot">·</span>
+        <span>Nike</span><span class="tick-dot">·</span>
+        <span>Adidas</span><span class="tick-dot">·</span>
+        <span>MDLBEAST</span><span class="tick-dot">·</span>
+        <span>Microsoft</span><span class="tick-dot">·</span>
+        <span>BMW</span><span class="tick-dot">·</span>
+        <span>Mastercard</span><span class="tick-dot">·</span>
+        <span>Porsche</span><span class="tick-dot">·</span>
+        <span>Emaar</span><span class="tick-dot">·</span>
+        <span>Dubai Gov</span><span class="tick-dot">·</span>
+        <span>Nike</span><span class="tick-dot">·</span>
+        <span>Adidas</span><span class="tick-dot">·</span>
+        <span>MDLBEAST</span><span class="tick-dot">·</span>
+        <span>Microsoft</span><span class="tick-dot">·</span>
+        <span>BMW</span><span class="tick-dot">·</span>
+        <span>Mastercard</span><span class="tick-dot">·</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- VMS / METHODOLOGY -->
-  <section id="work" class="methodology">
-    <div class="container methodology__inner">
-      <div class="methodology__left reveal">
-        <div class="v-label"><span class="num">04</span> How we work</div>
-        <h2 class="v-heading">The Vernacular<br>Molecular Smasher</h2>
-        <p class="v-body reveal reveal-delay-1">
-          Every brief goes into the VMS. It gets pulled apart, challenged, rebuilt. What comes out the other side isn't a strategy document — it's a spark. The thing that actually changes something.
-        </p>
-        <p class="v-body reveal reveal-delay-2">
-          We dissect, prototype, break apart, question, argue, design and debate. All in pursuit of the one idea that makes everything else obvious.
-        </p>
-      </div>
-      <div class="methodology__right reveal reveal-delay-1">
-        <div class="vms-steps">
-          <div class="vms-step">
-            <div class="vms-step__num">01</div>
-            <div class="vms-step__content">
-              <div class="vms-step__title">Brief Ingestion</div>
-              <div class="vms-step__desc">We ask the questions your brief didn't answer. Then we listen.</div>
-            </div>
-          </div>
-          <div class="vms-connector"></div>
-          <div class="vms-step">
-            <div class="vms-step__num">02</div>
-            <div class="vms-step__content">
-              <div class="vms-step__title">VMS Treatment</div>
-              <div class="vms-step__desc">Research. Prototyping. Deliberate provocation. We break it before we build it.</div>
-            </div>
-          </div>
-          <div class="vms-connector"></div>
-          <div class="vms-step">
-            <div class="vms-step__num">03</div>
-            <div class="vms-step__content">
-              <div class="vms-step__title">The Spark</div>
-              <div class="vms-step__desc">The singular idea, strategy or solution your brand needed. Delivered clean.</div>
-            </div>
-          </div>
+  <!-- ABOUT — DARK -->
+  <section id="about" class="s-dark section-pad">
+    <div class="container about-inner">
+      <div class="about-img reveal">
+        <img src="assets/images/rob-bock-crop.jpg" alt="Robert Bock, Founder of Vernacular">
+        <div class="about-img__caption">Robert Bock — Founder</div>
+        <div class="about-locations">
+          <div class="about-loc about-loc--active"><span class="loc-pulse"></span>Dubai, UAE</div>
+          <div class="about-loc"><span class="loc-dot-sm"></span>Hamburg, DE</div>
+          <div class="about-loc"><span class="loc-dot-sm"></span>Addis Ababa, ET</div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT / ROB -->
-  <section id="about" class="about">
-    <div class="container about__inner">
-      <div class="about__img-col reveal">
-        <div class="about__img-frame">
-          <img src="assets/images/texture-beam.jpg" alt="Robert Bock" class="about__img">
-          <div class="about__img-caption">Robert Bock — Founder</div>
-        </div>
-        <div class="about__locations">
-          <div class="location-item">
-            <div class="loc-dot loc-dot--active"></div>
-            <span>Dubai, UAE</span>
-          </div>
-          <div class="location-item">
-            <div class="loc-dot"></div>
-            <span>Hamburg, DE</span>
-          </div>
-          <div class="location-item">
-            <div class="loc-dot"></div>
-            <span>Addis Ababa, ET</span>
-          </div>
-        </div>
-      </div>
-      <div class="about__text-col">
-        <div class="v-label reveal"><span class="num">05</span> The person behind it</div>
-        <h2 class="v-heading reveal reveal-delay-1">20 years. No shortcuts.</h2>
-        <p class="v-body reveal reveal-delay-2">
-          Nike EMEA. Adidas Brand Activation Director across 50+ markets. CMO at MDLBEAST, where the brief was to build a music culture brand in a country where public concerts didn't exist three years prior. Beijing 2008. The GCC. Sub-Saharan Africa. That's the context sitting behind every recommendation we make.
-        </p>
-        <p class="v-body reveal reveal-delay-3">
-          Vernacular isn't an agency. It's a studio with a point of view and a track record. When you work here, you work directly with Rob — not handed off to a junior team.
-        </p>
-        <div class="about__picasso reveal reveal-delay-3">
+      <div class="about-text">
+        <div class="v-label reveal">The person behind it</div>
+        <h2 class="v-heading reveal rd1">20 years.<br>No shortcuts.</h2>
+        <ul class="about-bullets reveal rd2">
+          <li>Nike EMEA — Brand Activation, including Beijing 2008 Olympics</li>
+          <li>Adidas Brand Activation Director across 50+ emerging markets</li>
+          <li>CMO at MDLBEAST — built the brand where public concerts didn't exist</li>
+          <li>Now working directly with founders, CMOs and institutions</li>
+        </ul>
+        <div class="picasso-block reveal rd3">
           <div class="picasso-quote">"It took me 40 years."</div>
-          <div class="picasso-attr">— Pablo Picasso, on a 30-second napkin sketch</div>
+          <div class="picasso-attr">Pablo Picasso — on a 30-second sketch</div>
           <div class="picasso-note">We price the outcome. Not the hours.</div>
         </div>
+        <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal reveal rd3">Start with a coffee →</a>
       </div>
     </div>
   </section>
 
-  <!-- ICP HOOKS / LANDING PAGES -->
-  <section class="icp-strip">
+  <!-- HOW WE WORK — YELLOW -->
+  <section class="s-yellow section-pad">
     <div class="container">
-      <div class="v-label reveal"><span class="num">06</span> Who this is for</div>
-      <div class="icp-grid">
-        <a href="mailto:coffee@vernacular.cc?subject=Startup%20Brand%20Strategy%20Enquiry" class="icp-card reveal">
-          <div class="icp-card__icon">🚀</div>
-          <div class="icp-card__title">You're a startup<br>founder</div>
-          <p class="icp-card__desc">Your brand isn't pulling its weight. You need positioning that works before you start scaling.</p>
-          <div class="icp-card__cta">Get a free brand audit →</div>
-        </a>
-        <a href="pro/index.html" class="icp-card reveal reveal-delay-1">
-          <div class="icp-card__icon">🎯</div>
-          <div class="icp-card__title">You're a CMO<br>or brand leader</div>
-          <p class="icp-card__desc">You need a thinking partner, not another agency. Someone who's sat in your seat and knows what it costs to get it wrong.</p>
-          <div class="icp-card__cta">Explore Vernacular Pro →</div>
-        </a>
-        <a href="mailto:coffee@vernacular.cc?subject=Market%20Entry%20Enquiry" class="icp-card reveal reveal-delay-2">
-          <div class="icp-card__icon">🌍</div>
-          <div class="icp-card__title">You're entering<br>Africa or the GCC</div>
-          <p class="icp-card__desc">Culture is the barrier nobody briefs for. We know both markets from the inside. We'll save you 12 months of expensive mistakes.</p>
-          <div class="icp-card__cta">Book a market entry call →</div>
-        </a>
-        <a href="labs/index.html" class="icp-card reveal reveal-delay-3">
-          <div class="icp-card__icon">🏛️</div>
-          <div class="icp-card__title">You're an embassy,<br>NGO or institution</div>
-          <p class="icp-card__desc">You need training your people will actually remember. Not a PowerPoint marathon. A real strategic intervention.</p>
-          <div class="icp-card__cta">Explore Vernacular Labs →</div>
-        </a>
+      <div class="v-label reveal">How we work</div>
+      <h2 class="v-heading reveal rd1">The Vernacular<br>Molecular Smasher.</h2>
+      <div class="vms-visual reveal rd2">
+        <div class="vms-step">
+          <div class="vms-step__num">01</div>
+          <div class="vms-step__title">Brief</div>
+          <div class="vms-step__desc">We ask the questions your brief didn't answer.</div>
+        </div>
+        <div class="vms-arrow">→</div>
+        <div class="vms-step">
+          <div class="vms-step__num">02</div>
+          <div class="vms-step__title">Smash</div>
+          <div class="vms-step__desc">Break it apart. Research. Provoke. Rebuild.</div>
+        </div>
+        <div class="vms-arrow">→</div>
+        <div class="vms-step">
+          <div class="vms-step__num">03</div>
+          <div class="vms-step__title">Spark</div>
+          <div class="vms-step__desc">The one idea that makes everything else obvious.</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <div class="cta-band__bg">
+  <!-- CTA — DARK -->
+  <section class="s-dark section-pad cta-section">
+    <div class="cta-bg">
       <img src="assets/images/texture-smoke.jpg" alt="" aria-hidden="true">
-      <div class="cta-band__overlay"></div>
+      <div class="cta-bg__overlay"></div>
     </div>
-    <div class="container cta-band__inner">
-      <div class="cta-band__text reveal">
-        <h2 class="cta-band__title">Ready to stop guessing<br>and start building?</h2>
-        <p class="v-body reveal reveal-delay-1">No pitch decks. No RFPs. Just a conversation to see if there's a fit.<br>If there is, we move fast.</p>
+    <div class="container cta-inner">
+      <div class="reveal">
+        <div class="cta-kicker">Ready when you are.</div>
+        <h2 class="v-heading cta-title reveal rd1">No pitch decks.<br>No RFPs.<br>Just a conversation.</h2>
       </div>
-      <div class="cta-band__action reveal reveal-delay-2">
-        <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--primary v-btn--arrow">Send us a coffee note</a>
-        <div class="cta-band__email">coffee@vernacular.cc</div>
+      <div class="cta-action reveal rd2">
+        <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal cta-btn">coffee@vernacular.cc →</a>
+        <div class="cta-note">We respond within 24 hours.</div>
       </div>
     </div>
   </section>
@@ -394,11 +343,11 @@
   <!-- FOOTER -->
   <footer class="v-footer">
     <div class="container">
-      <div class="v-footer__inner">
+      <div class="v-footer__grid">
         <div>
           <div class="v-footer__brand">VERNACULAR</div>
           <div class="v-footer__tagline">Creative · Strategy · Culture</div>
-          <p class="v-body" style="margin-top:16px;font-size:12px;">Dubai · Hamburg · Addis Ababa<br>vernacular.cc</p>
+          <p style="margin-top:16px;font-family:var(--font-mono);font-size:11px;color:rgba(242,239,232,0.35);line-height:1.7;">Dubai · Hamburg · Addis Ababa<br>vernacular.cc</p>
         </div>
         <div>
           <div class="v-footer__col-title">Services</div>
@@ -410,18 +359,18 @@
           </ul>
         </div>
         <div>
-          <div class="v-footer__col-title">Navigate</div>
+          <div class="v-footer__col-title">Quick links</div>
           <ul class="v-footer__links">
+            <li><a href="#for-you">Who it's for</a></li>
             <li><a href="#about">About Rob</a></li>
-            <li><a href="#work">How we work</a></li>
-            <li><a href="#offerings">Offerings</a></li>
             <li><a href="mailto:coffee@vernacular.cc?subject=Free%20Brand%20Audit">Free brand audit</a></li>
+            <li><a href="mailto:coffee@vernacular.cc?subject=Free%2030-Min%20Call">Free 30-min call</a></li>
           </ul>
         </div>
       </div>
-      <div class="v-rule"></div>
+      <div class="v-rule-dark"></div>
       <div class="v-footer__bottom">
-        <span>© 2026 Vernacular LLC · Dubai, UAE · All rights reserved</span>
+        <span>© 2026 Vernacular LLC · Dubai, UAE</span>
         <span>vernacular.cc</span>
       </div>
     </div>
