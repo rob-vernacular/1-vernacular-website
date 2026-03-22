@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vernacular — Creative. Strategy. Culture.</title>
-  <meta name="description" content="Senior brand strategy and creative consultancy. We build brands that mean something. Dubai, Hamburg, Addis Ababa.">
-  <meta property="og:title" content="Vernacular — Creative. Strategy. Culture.">
-  <meta property="og:description" content="Brand strategy, fractional CMO, cultural intelligence. For founders, CMOs and institutions operating at the edge of culture.">
+  <title>Vernacular | Creative. Strategy. Culture.</title>
+  <meta name="description" content="Vernacular builds brands that mean something. Brand strategy, fractional CMO, creative direction and cultural intelligence. Dubai, Hamburg, Addis Ababa.">
+  <meta property="og:title" content="Vernacular | Creative. Strategy. Culture.">
+  <meta property="og:description" content="We build brands that cut through. Brand strategy, fractional CMO, cultural intelligence across Dubai, Hamburg and Addis Ababa.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://vernacular.cc">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://vernacular.cc">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/system.css">
-  <link rel="stylesheet" href="css/home.css">
-  <!-- Google tag (gtag.js) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y31WTXG2T3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,354 +24,249 @@
 <body>
 
   <!-- NAV -->
-  <nav class="v-nav v-nav--dark" id="main-nav">
-    <div class="v-nav__brand">
-      <div class="v-nav__logo">VERNACULAR</div>
-      <div class="v-nav__sub">Creative · Strategy · Culture</div>
+  <nav class="nav">
+    <a href="index.html" class="nav-wordmark">vernacular</a>
+    <div class="nav-toggle">
+      <span></span><span></span><span></span>
     </div>
-    <button class="v-nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    <ul class="v-nav__links">
-      <li><a href="#for-you">Who It's For</a></li>
-      <li><a href="#offerings">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="labs/index.html" class="nav-sub-labs">Labs</a></li>
-      <li><a href="pro/index.html" class="nav-sub-pro">Pro</a></li>
-      <li><a href="mailto:coffee@vernacular.cc" class="nav-pill">Let's talk</a></li>
-    </ul>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="pro/index.html">Pro</a>
+      <a href="labs/index.html">Labs</a>
+      <a href="about/index.html">About</a>
+      <a href="mailto:coffee@vernacular.cc" class="nav-cta">Let's talk</a>
+    </div>
   </nav>
 
-  <!-- HERO — DARK -->
-  <section class="s-dark hero section-pad--lg">
-    <div class="hero__bg">
-      <img src="assets/images/texture-abstract2.jpg" alt="" aria-hidden="true">
-      <div class="hero__bg-overlay"></div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?w=1600&q=80" alt="Culture" loading="eager">
     </div>
-    <div class="container hero__inner">
-      <div class="hero__left">
-        <div class="hero__locations reveal">
-          <span class="loc-dot"></span>Dubai
-          <span class="loc-sep">·</span>Hamburg
-          <span class="loc-sep">·</span>Addis Ababa
-        </div>
-        <h1 class="v-display hero__title reveal rd1">
-          <span class="title-v">V</span>ERNACULAR
-        </h1>
-        <p class="hero__tagline reveal rd2">
-          We build brands that<br>mean something.
-        </p>
-        <div class="hero__actions reveal rd3">
-          <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal">Start with a coffee →</a>
-          <a href="#offerings" class="v-btn v-btn--ghost-dark">See what we do</a>
-        </div>
-      </div>
-      <div class="hero__right reveal rd2">
-        <div class="hero__stats">
-          <div class="hero__stat">
-            <div class="hero__stat-num">20+</div>
-            <div class="hero__stat-label">Years at Nike,<br>Adidas & MDLBEAST</div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-num">50+</div>
-            <div class="hero__stat-label">Markets activated<br>across 4 continents</div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-num">3</div>
-            <div class="hero__stat-label">Cities. One studio.<br>No excuses.</div>
-          </div>
-        </div>
+    <div class="hero-content">
+      <h1>Brands that <span class="accent">cut through.</span> Built where culture lives.</h1>
+      <p class="hero-sub">Dubai / Hamburg / Addis Ababa</p>
+      <div class="hero-cta-row">
+        <a href="mailto:coffee@vernacular.cc" class="btn-primary">Start with a coffee</a>
+        <a href="#services" class="btn-ghost">See what we do</a>
       </div>
     </div>
   </section>
 
-  <!-- TICKER — on yellow band -->
-  <div class="s-dark">
-    <div class="v-ticker">
-      <div class="v-ticker__track">
-        <span>Brand Strategy</span><span class="tick-dot">✦</span>
-        <span>Fractional CMO</span><span class="tick-dot">✦</span>
-        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
-        <span>Creative Direction</span><span class="tick-dot">✦</span>
-        <span>Executive Coaching</span><span class="tick-dot">✦</span>
-        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
-        <span>Market Entry</span><span class="tick-dot">✦</span>
-        <span>Narrative Design</span><span class="tick-dot">✦</span>
-        <span>Brand Strategy</span><span class="tick-dot">✦</span>
-        <span>Fractional CMO</span><span class="tick-dot">✦</span>
-        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
-        <span>Creative Direction</span><span class="tick-dot">✦</span>
-        <span>Executive Coaching</span><span class="tick-dot">✦</span>
-        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
-        <span>Market Entry</span><span class="tick-dot">✦</span>
-        <span>Narrative Design</span><span class="tick-dot">✦</span>
-        <span>Brand Strategy</span><span class="tick-dot">✦</span>
-        <span>Fractional CMO</span><span class="tick-dot">✦</span>
-        <span>Cultural Intelligence</span><span class="tick-dot">✦</span>
-        <span>Creative Direction</span><span class="tick-dot">✦</span>
-        <span>Executive Coaching</span><span class="tick-dot">✦</span>
-        <span>Institutional Workshops</span><span class="tick-dot">✦</span>
-        <span>Market Entry</span><span class="tick-dot">✦</span>
-        <span>Narrative Design</span><span class="tick-dot">✦</span>
-      </div>
+  <!-- SERVICE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Brand Strategy</span><span class="dot">/</span>
+      <span>Fractional CMO</span><span class="dot">/</span>
+      <span>Cultural Intelligence</span><span class="dot">/</span>
+      <span>Creative Direction</span><span class="dot">/</span>
+      <span>Executive Coaching</span><span class="dot">/</span>
+      <span>Market Entry</span><span class="dot">/</span>
+      <span>Workshops</span><span class="dot">/</span>
+      <span>Narrative Design</span><span class="dot">/</span>
+      <span>Brand Strategy</span><span class="dot">/</span>
+      <span>Fractional CMO</span><span class="dot">/</span>
+      <span>Cultural Intelligence</span><span class="dot">/</span>
+      <span>Creative Direction</span><span class="dot">/</span>
+      <span>Executive Coaching</span><span class="dot">/</span>
+      <span>Market Entry</span><span class="dot">/</span>
+      <span>Workshops</span><span class="dot">/</span>
+      <span>Narrative Design</span><span class="dot">/</span>
     </div>
   </div>
 
-  <!-- WHO IT'S FOR — YELLOW (elevated) -->
-  <section id="for-you" class="s-yellow section-pad">
+  <!-- SERVICES -->
+  <section class="section" id="services">
     <div class="container">
-      <div class="v-label reveal">Who this is for</div>
-      <h2 class="v-heading reveal rd1">Pick your problem.</h2>
-      <div class="icp-grid reveal rd2">
-
-        <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Audit" class="icp-card icp-card--dark">
-          <div class="icp-num">01</div>
-          <div class="icp-title">You're a startup founder</div>
-          <ul class="icp-bullets">
-            <li>Brand not pulling its weight</li>
-            <li>Need positioning before you scale</li>
-            <li>No time for agency overhead</li>
-          </ul>
-          <div class="icp-hook">Free brand audit →</div>
-        </a>
-
-        <a href="pro/index.html" class="icp-card icp-card--dark">
-          <div class="icp-num">02</div>
-          <div class="icp-title">You're a CMO or brand leader</div>
-          <ul class="icp-bullets">
-            <li>Need a peer, not another vendor</li>
-            <li>Team lacks strategic seniority</li>
-            <li>Board wants results faster</li>
-          </ul>
-          <div class="icp-hook">Free 30-min strategy call →</div>
-        </a>
-
-        <a href="mailto:coffee@vernacular.cc?subject=Market%20Entry%20Consultation" class="icp-card icp-card--dark">
-          <div class="icp-num">03</div>
-          <div class="icp-title">You're entering Africa or the GCC</div>
-          <ul class="icp-bullets">
-            <li>Culture is the barrier nobody briefs for</li>
-            <li>We know both markets from inside</li>
-            <li>Save 12 months of expensive mistakes</li>
-          </ul>
-          <div class="icp-hook">Free market entry call →</div>
-        </a>
-
-        <a href="labs/index.html" class="icp-card icp-card--dark">
-          <div class="icp-num">04</div>
-          <div class="icp-title">You're an embassy, NGO or institution</div>
-          <ul class="icp-bullets">
-            <li>Need training people remember</li>
-            <li>Not a PowerPoint marathon</li>
-            <li>Strategic intervention, built for Addis</li>
-          </ul>
-          <div class="icp-hook">Free programme review →</div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- THREE OFFERINGS — PAPER/LIGHT -->
-  <section id="offerings" class="s-paper section-pad">
-    <div class="container">
-      <div class="v-label reveal">Three practices. One studio.</div>
-      <h2 class="v-heading reveal rd1">We solve problems.<br>Pick yours.</h2>
-      <div class="offerings-grid reveal rd2">
-
-        <div class="offering offering--core">
-          <div class="offering__accent"></div>
-          <div class="offering__header">
-            <div class="offering__label">Vernacular</div>
-            <div class="offering__title">Brand &amp; Creative Strategy</div>
-          </div>
-          <ul class="offering__points">
-            <li>Brand positioning &amp; identity</li>
-            <li>Campaign strategy &amp; creative direction</li>
-            <li>Market entry — Africa / GCC corridor</li>
-          </ul>
-          <div class="offering__footer">
-            <div class="offering__free">Free brand audit to start</div>
-            <a href="mailto:coffee@vernacular.cc?subject=Brand%20Strategy%20Enquiry" class="v-btn v-btn--ink">Work with us →</a>
-          </div>
-        </div>
-
-        <div class="offering offering--pro">
-          <div class="offering__accent"></div>
-          <div class="offering__header">
-            <div class="offering__label" style="color:var(--pro-accent);">Vernacular Pro</div>
-            <div class="offering__title">For CMOs &amp; Founders</div>
-          </div>
-          <ul class="offering__points">
-            <li>Fractional CMO engagements</li>
-            <li>1:1 executive coaching</li>
-            <li>Marketing org &amp; team architecture</li>
-          </ul>
-          <div class="offering__footer">
-            <div class="offering__free" style="color:var(--pro-accent);">Free 30-min call to start</div>
-            <a href="pro/index.html" class="v-btn v-btn--pro">Explore Pro →</a>
-          </div>
-        </div>
-
-        <div class="offering offering--labs">
-          <div class="offering__accent"></div>
-          <div class="offering__header">
-            <div class="offering__label" style="color:var(--labs-accent);">Vernacular Labs</div>
-            <div class="offering__title">Training &amp; Workshop Studio</div>
-          </div>
-          <ul class="offering__points">
-            <li>Cultural intelligence workshops</li>
-            <li>Institutional storytelling &amp; AI</li>
-            <li>Bespoke off-sites &amp; interventions</li>
-          </ul>
-          <div class="offering__footer">
-            <div class="offering__free" style="color:var(--labs-accent);">Free programme review to start</div>
-            <a href="labs/index.html" class="v-btn v-btn--labs">Explore Labs →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TICKER 2 -->
-  <div class="s-yellow">
-    <div class="v-ticker" style="background:var(--ink);">
-      <div class="v-ticker__track">
-        <span>Nike</span><span class="tick-dot">·</span>
-        <span>Adidas</span><span class="tick-dot">·</span>
-        <span>MDLBEAST</span><span class="tick-dot">·</span>
-        <span>Microsoft</span><span class="tick-dot">·</span>
-        <span>BMW</span><span class="tick-dot">·</span>
-        <span>Mastercard</span><span class="tick-dot">·</span>
-        <span>Porsche</span><span class="tick-dot">·</span>
-        <span>Emaar</span><span class="tick-dot">·</span>
-        <span>Dubai Gov</span><span class="tick-dot">·</span>
-        <span>Nike</span><span class="tick-dot">·</span>
-        <span>Adidas</span><span class="tick-dot">·</span>
-        <span>MDLBEAST</span><span class="tick-dot">·</span>
-        <span>Microsoft</span><span class="tick-dot">·</span>
-        <span>BMW</span><span class="tick-dot">·</span>
-        <span>Mastercard</span><span class="tick-dot">·</span>
-        <span>Porsche</span><span class="tick-dot">·</span>
-        <span>Emaar</span><span class="tick-dot">·</span>
-        <span>Dubai Gov</span><span class="tick-dot">·</span>
-        <span>Nike</span><span class="tick-dot">·</span>
-        <span>Adidas</span><span class="tick-dot">·</span>
-        <span>MDLBEAST</span><span class="tick-dot">·</span>
-        <span>Microsoft</span><span class="tick-dot">·</span>
-        <span>BMW</span><span class="tick-dot">·</span>
-        <span>Mastercard</span><span class="tick-dot">·</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ABOUT — DARK -->
-  <section id="about" class="s-dark section-pad">
-    <div class="container about-inner">
-      <div class="about-img reveal">
-        <img src="assets/images/rob-bock-crop.jpg" alt="Robert Bock, Founder of Vernacular">
-        <div class="about-img__caption">Robert Bock — Founder</div>
-        <div class="about-locations">
-          <div class="about-loc about-loc--active"><span class="loc-pulse"></span>Dubai, UAE</div>
-          <div class="about-loc"><span class="loc-dot-sm"></span>Hamburg, DE</div>
-          <div class="about-loc"><span class="loc-dot-sm"></span>Addis Ababa, ET</div>
-        </div>
-      </div>
-      <div class="about-text">
-        <div class="v-label reveal">The person behind it</div>
-        <h2 class="v-heading reveal rd1">20 years.<br>No shortcuts.</h2>
-        <ul class="about-bullets reveal rd2">
-          <li>Nike EMEA — Brand Activation, including Beijing 2008 Olympics</li>
-          <li>Adidas Brand Activation Director across 50+ emerging markets</li>
-          <li>CMO at MDLBEAST — built the brand where public concerts didn't exist</li>
-          <li>Now working directly with founders, CMOs and institutions</li>
-        </ul>
-        <div class="picasso-block reveal rd3">
-          <div class="picasso-quote">"It took me 40 years."</div>
-          <div class="picasso-attr">Pablo Picasso — on a 30-second sketch</div>
-          <div class="picasso-note">We price the outcome. Not the hours.</div>
-        </div>
-        <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal reveal rd3">Start with a coffee →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE WORK — YELLOW -->
-  <section class="s-yellow section-pad">
-    <div class="container">
-      <div class="v-label reveal">How we work</div>
-      <h2 class="v-heading reveal rd1">The Vernacular<br>Molecular Smasher.</h2>
-      <div class="vms-visual reveal rd2">
-        <div class="vms-step">
-          <div class="vms-step__num">01</div>
-          <div class="vms-step__title">Brief</div>
-          <div class="vms-step__desc">We ask the questions your brief didn't answer.</div>
-        </div>
-        <div class="vms-arrow">→</div>
-        <div class="vms-step">
-          <div class="vms-step__num">02</div>
-          <div class="vms-step__title">Smash</div>
-          <div class="vms-step__desc">Break it apart. Research. Provoke. Rebuild.</div>
-        </div>
-        <div class="vms-arrow">→</div>
-        <div class="vms-step">
-          <div class="vms-step__num">03</div>
-          <div class="vms-step__title">Spark</div>
-          <div class="vms-step__desc">The one idea that makes everything else obvious.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA — DARK -->
-  <section class="s-dark section-pad cta-section">
-    <div class="cta-bg">
-      <img src="assets/images/texture-smoke.jpg" alt="" aria-hidden="true">
-      <div class="cta-bg__overlay"></div>
-    </div>
-    <div class="container cta-inner">
       <div class="reveal">
-        <div class="cta-kicker">Ready when you are.</div>
-        <h2 class="v-heading cta-title reveal rd1">No pitch decks.<br>No RFPs.<br>Just a conversation.</h2>
+        <p class="section-label">Services</p>
+        <h2 class="section-headline">Three practices. <span class="accent">One studio.</span></h2>
       </div>
-      <div class="cta-action reveal rd2">
-        <a href="mailto:coffee@vernacular.cc" class="v-btn v-btn--signal cta-btn">coffee@vernacular.cc →</a>
-        <div class="cta-note">We respond within 24 hours.</div>
+      <div class="services-grid reveal" data-stagger>
+        <a href="index.html#brand-strategy" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Brand Strategy</h3>
+          <p>Positioning that pulls its weight</p>
+        </a>
+        <a href="pro/index.html" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Fractional CMO</h3>
+          <p>Senior firepower, no full-time overhead</p>
+        </a>
+        <a href="landing/market-entry.html" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Market Entry</h3>
+          <p>Africa and GCC from the inside</p>
+        </a>
+        <a href="index.html#brand-strategy" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Creative Direction</h3>
+          <p>Campaigns people remember</p>
+        </a>
+        <a href="pro/index.html" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Executive Coaching</h3>
+          <p>For leaders, not followers</p>
+        </a>
+        <a href="labs/index.html" class="service-card">
+          <span class="arrow">&rarr;</span>
+          <h3>Workshops</h3>
+          <p>Strategic interventions that stick</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section" id="who">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Who it's for</p>
+        <h2 class="section-headline">Four doors. <span class="accent">One studio.</span></h2>
+      </div>
+      <div class="icp-grid reveal" data-stagger>
+        <a href="landing/founders.html" class="icp-card">
+          <h3>Startup Founders</h3>
+          <p>Scaling and the brand can't keep up. Need positioning before the next raise.</p>
+          <span class="hook">Free brand audit to start &rarr;</span>
+        </a>
+        <a href="landing/cmos.html" class="icp-card">
+          <h3>CMOs + Brand Leaders</h3>
+          <p>Need a peer with 20 years in the room. Not another vendor pitch.</p>
+          <span class="hook">Free 30-min strategy call &rarr;</span>
+        </a>
+        <a href="landing/market-entry.html" class="icp-card">
+          <h3>Africa / GCC Market Entry</h3>
+          <p>Culture is the barrier nobody briefs for. Save 12 months of expensive mistakes.</p>
+          <span class="hook">Free market entry session &rarr;</span>
+        </a>
+        <a href="landing/institutions.html" class="icp-card">
+          <h3>Embassies, NGOs, Institutions</h3>
+          <p>Training people remember. Not a PowerPoint marathon.</p>
+          <span class="hook">Free programme review &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">How we work</p>
+        <h2 class="section-headline">No frameworks. No fluff.</h2>
+      </div>
+      <div class="process-row reveal">
+        <div class="process-step">
+          <div class="word">Listen.</div>
+          <div class="desc">We ask what your brief didn't</div>
+        </div>
+        <div class="process-step">
+          <div class="word">Break.</div>
+          <div class="desc">Take it apart. Find the truth.</div>
+        </div>
+        <div class="process-step">
+          <div class="word">Build.</div>
+          <div class="desc">The one idea that changes everything</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE STRIP -->
+  <div class="image-grid">
+    <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=600&q=80" alt="Culture" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=600&q=80" alt="Creative" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?w=600&q=80" alt="Strategy" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600&q=80" alt="Design" loading="lazy">
+  </div>
+
+  <!-- ABOUT TEASER -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="assets/images/rob-bock.jpg" alt="Robert Bock" loading="lazy">
+        </div>
+        <div class="reveal">
+          <p class="section-label">About</p>
+          <h2 class="section-headline">20 years. <span class="accent">No shortcuts.</span></h2>
+          <p class="section-body">
+            Nike EMEA. Adidas across 50+ markets. CMO at MDLBEAST, where public concerts didn't exist. Now working directly with founders, CMOs and institutions across three cities.
+          </p>
+          <div class="about-stats" data-stagger>
+            <div class="stat">
+              <div class="number">20+</div>
+              <div class="label">Years at Nike, Adidas, MDLBEAST</div>
+            </div>
+            <div class="stat">
+              <div class="number">50+</div>
+              <div class="label">Markets activated</div>
+            </div>
+            <div class="stat">
+              <div class="number">3</div>
+              <div class="label">Cities. One studio.</div>
+            </div>
+            <div class="stat">
+              <div class="number">1</div>
+              <div class="label">Rule: no bullshit</div>
+            </div>
+          </div>
+          <div style="margin-top: 2rem;">
+            <a href="about/index.html" class="btn-primary">More about Rob</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO TICKER -->
+  <div class="ticker-wrap">
+    <div class="logo-ticker">
+      <span>Nike</span><span>Adidas</span><span>MDLBEAST</span><span>Microsoft</span><span>BMW</span><span>Mastercard</span><span>Porsche</span><span>Emaar</span><span>Dubai Gov</span>
+      <span>Nike</span><span>Adidas</span><span>MDLBEAST</span><span>Microsoft</span><span>BMW</span><span>Mastercard</span><span>Porsche</span><span>Emaar</span><span>Dubai Gov</span>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-headline" style="text-align:center;">No pitch decks. No RFPs. <span class="accent">Just a conversation.</span></h2>
+        <div style="text-align:center; margin-top: 2rem;">
+          <a href="mailto:coffee@vernacular.cc" class="cta-email">coffee@vernacular.cc &rarr;</a>
+        </div>
+        <p class="cta-note" style="text-align:center;">We respond within 24 hours. No autoresponders.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="v-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="v-footer__grid">
+      <div class="footer-grid">
         <div>
-          <div class="v-footer__brand">VERNACULAR</div>
-          <div class="v-footer__tagline">Creative · Strategy · Culture</div>
-          <p style="margin-top:16px;font-family:var(--font-mono);font-size:11px;color:rgba(242,239,232,0.35);line-height:1.7;">Dubai · Hamburg · Addis Ababa<br>vernacular.cc</p>
+          <div class="footer-wordmark">vernacular</div>
+          <p class="footer-tagline">Creative. Strategy. Culture.<br>Dubai / Hamburg / Addis Ababa</p>
         </div>
-        <div>
-          <div class="v-footer__col-title">Services</div>
-          <ul class="v-footer__links">
-            <li><a href="#offerings">Brand Strategy</a></li>
-            <li><a href="pro/index.html">Vernacular Pro</a></li>
-            <li><a href="labs/index.html">Vernacular Labs</a></li>
-            <li><a href="mailto:coffee@vernacular.cc">Get in touch</a></li>
-          </ul>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="pro/index.html">Vernacular Pro</a>
+          <a href="labs/index.html">Vernacular Labs</a>
+          <a href="landing/founders.html">For Founders</a>
+          <a href="landing/cmos.html">For CMOs</a>
+          <a href="landing/market-entry.html">Market Entry</a>
+          <a href="landing/institutions.html">For Institutions</a>
         </div>
-        <div>
-          <div class="v-footer__col-title">Quick links</div>
-          <ul class="v-footer__links">
-            <li><a href="#for-you">Who it's for</a></li>
-            <li><a href="#about">About Rob</a></li>
-            <li><a href="mailto:coffee@vernacular.cc?subject=Free%20Brand%20Audit">Free brand audit</a></li>
-            <li><a href="mailto:coffee@vernacular.cc?subject=Free%2030-Min%20Call">Free 30-min call</a></li>
-          </ul>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:coffee@vernacular.cc">coffee@vernacular.cc</a>
+          <a href="about/index.html">About Rob</a>
+          <a href="https://www.linkedin.com/in/robbock/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
-      <div class="v-rule-dark"></div>
-      <div class="v-footer__bottom">
-        <span>© 2026 Vernacular LLC · Dubai, UAE</span>
-        <span>vernacular.cc</span>
+      <div class="footer-bottom">
+        &copy; 2026 Vernacular LLC / Dubai, UAE / vernacular.cc
       </div>
     </div>
   </footer>

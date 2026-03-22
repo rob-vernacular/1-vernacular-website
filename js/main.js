@@ -1,59 +1,65 @@
-/* vernacular.cc — main.js v2 */
-
-// Scroll reveal
-function initReveal() {
-  const els = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-    });
-  }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
-  els.forEach(el => obs.observe(el));
-}
-
-// Mobile nav
-function initNav() {
-  const burger = document.querySelector('.v-nav__burger');
-  const links = document.querySelector('.v-nav__links');
-  if (!burger || !links) return;
-  burger.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    const spans = burger.querySelectorAll('span');
-    if (open) {
-      spans[0].style.transform = 'translateY(6.5px) rotate(45deg)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'translateY(-6.5px) rotate(-45deg)';
-    } else {
-      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    }
-  });
-  links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      links.classList.remove('open');
-      burger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    });
-  });
-}
-
-// Nav scroll style — swap dark/light based on section background
-function initNavScroll() {
-  const nav = document.getElementById('main-nav');
-  if (!nav) return;
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  }, { passive: true });
-}
-
-// Ticker clone for seamless loop
-function initTicker() {
-  document.querySelectorAll('.v-ticker__track').forEach(t => {
-    // Already has 3 sets in HTML for seamless loop
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  initReveal();
-  initNav();
-  initNavScroll();
-  initTicker();
+
+  // Nav hide/show on scroll
+  const nav = document.querySelector('.nav');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const current = window.scrollY;
+    if (current > lastScroll && current > 200) {
+      nav.classList.add('hidden');
+    } else {
+      nav.classList.remove('hidden');
+    }
+    lastScroll = current;
+  });
+
+  // Mobile toggle
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      const spans = toggle.querySelectorAll('span');
+      if (links.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(4px, 4px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        const spans = toggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // Stagger reveal children
+  document.querySelectorAll('[data-stagger]').forEach(parent => {
+    const children = parent.children;
+    Array.from(children).forEach((child, i) => {
+      child.style.transitionDelay = `${i * 0.1}s`;
+    });
+  });
+
 });
