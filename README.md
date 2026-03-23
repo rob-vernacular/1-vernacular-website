@@ -2,21 +2,10 @@
 
 Creative. Strategy. Culture.
 
-Brand consultancy website for Vernacular LLC. Built with static HTML/CSS/JS. Hosted on GitHub Pages.
+Single-page site. Fraunces + Inter. #FF003C neon magenta-red. Charcoal + Alabaster.
 
-## Structure
+## To add video hero
 
-- `index.html` — Homepage
-- `pro/` — Vernacular Pro (CMOs, Founders, Leaders)
-- `labs/` — Vernacular Labs (Workshops, Institutions)
-- `about/` — About Robert Bock
-- `landing/` — ICP landing pages (founders, cmos, market-entry, institutions)
-- `css/style.css` — Design system
-- `js/main.js` — Nav, scroll reveals, mobile menu
-- `assets/images/` — Image assets
-
-## Brand
-
-- **Palette:** Ink (#0A0A0A), Hot Coral (#FF5733), Bone (#F5F0E8)
-- **Type:** Familjen Grotesk (headlines) + DM Sans (body)
-- **Analytics:** G-Y31WTXG2T3
+1. Place your video file at `assets/video/hero.mp4`
+2. In `index.html`, replace the `<img>` inside `.hero-media` with:
+   `<video src="assets/video/hero.mp4" autoplay muted loop playsinline></video>`
